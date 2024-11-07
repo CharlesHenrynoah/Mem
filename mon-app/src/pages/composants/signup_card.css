@@ -1,0 +1,137 @@
+/* Conteneur principal */
+.signup-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Carte d'inscription */
+.signup-card {
+    width: 100%;
+    max-width: 24rem; /* Largeur maximale */
+    background-color: #000000;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Titre de la carte */
+.signup-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem; /* Augmentation significative de l'espace sous le titre */
+    margin-top: 2rem; /* Ajoute un espace au-dessus du titre */
+    color: #ffffff;
+}
+
+/* Formulaire */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espace entre les champs */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espace entre le label et le champ */
+}
+
+/* Labels */
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 0.25rem;
+}
+
+/* Champs d'entrée */
+.form-input {
+    width: 96%; /* Champs légèrement réduits pour une meilleure mise en page */
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0000FF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Conteneur pour mot de passe */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Bouton Soumettre */
+.submit-btn {
+    width: 100%;
+    background-color: #0000FF;
+    color: #ffffff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+.submit-btn:disabled {
+    background-color: rgba(0, 0, 255, 0.5);
+    cursor: not-allowed;
+}
+
+/* Lien vers connexion */
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+.link {
+    color: #0000FF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
