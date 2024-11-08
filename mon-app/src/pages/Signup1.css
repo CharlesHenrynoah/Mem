@@ -6,4 +6,5 @@
     min-height: 100vh;
     background-color: #000000;
     padding: 20px;
+    overflow: hidden; /* Empêche le défilement */
   }

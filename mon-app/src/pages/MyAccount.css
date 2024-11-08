@@ -1,0 +1,20 @@
+.myaccount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.myaccount-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.myaccount-content {
+    font-size: 1rem;
+    text-align: center;
+}

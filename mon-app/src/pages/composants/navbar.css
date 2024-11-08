@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2.5rem;
     background-color: #000000;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.123); 
+    border: 1px solid rgba(255, 255, 255, 0.151);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,53 +15,68 @@
 }
 
 .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 700;
     color: #FFFFFF;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.3s ease;
 }
 
 .navbar-logo:hover {
     color: #0000FF;
+    transform: scale(1.05);
 }
 
 .navbar-buttons {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .button-signup {
-    padding: 0.75rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.85rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.07);
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 500;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .button-signup:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 .button-login {
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1.5rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     background-color: #0000FF;
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 500;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.3);
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .button-login:hover {
     background-color: #FFFFFF;
     color: #0000FF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 255, 0.4);
 }
 
 .language-dropdown {
@@ -71,46 +86,60 @@
 .dropdown-button {
     display: flex;
     align-items: center;
-    padding: 0.75rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.85rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.07);
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 500;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .dropdown-button:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 .dropdown-content {
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     background-color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    min-width: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    min-width: 170px;
     transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .dropdown-item {
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1.5rem;
     width: 100%;
     text-align: left;
     border: none;
     background: none;
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 500;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
 }
+
 .dropdown-item:hover {
     background-color: #0000FF;
     color: #FFFFFF;
+    transform: translateX(5px);
 }

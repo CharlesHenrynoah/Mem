@@ -15,7 +15,7 @@
     background-color: #000000;
     padding: 2rem;
     border-radius: 0.75rem;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.658);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
 }
@@ -81,7 +81,7 @@
 
 .toggle-password-btn {
     position: absolute;
-    right: 1rem;
+    right: 1rem; /* Réduit pour donner plus d'espace */
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -90,6 +90,8 @@
     font-size: 0.875rem;
     cursor: pointer;
     transition: color 0.2s;
+    width: auto; /* Permet au bouton de s'adapter à son contenu */
+    padding: 0.5rem; /* Ajoute un peu d'espace autour du texte */
 }
 
 /* Bouton Soumettre */

@@ -1,0 +1,214 @@
+.signup-card2 {
+    width: 100%;
+    max-width: 40rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.658);
+    background-color: #000;
+    color: #fff;
+}
+
+.signup-card2 h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.photo-upload-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.photo-upload-label {
+    display: inline-block;
+    cursor: pointer;
+    color: #0000FF;
+}
+
+.upload-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #0000FF;
+    transition: border-color 0.3s;
+}
+
+.upload-placeholder:hover {
+    border-color: #0000FF;
+}
+
+.camera-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0000FF;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-input,
+.phone-number,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus,
+.phone-number:focus,
+select:focus {
+    outline: none;
+    border-color: #0000FF;
+}
+
+.country-code {
+    width: 20%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.country-code:focus {
+    outline: none;
+    border-color: #0000FF;
+}
+
+.error {
+    color: #ff4444;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.phone-input {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1.2rem auto;
+    padding-right: 2rem;
+}
+
+select option {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+select option:hover,
+select option:focus {
+    background-color: #0000FF;
+    color: #fff;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    gap: 0.5rem;
+    font-size: 0.875rem; /* Ajout pour réduire la taille du texte */
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #0000FF;
+    appearance: none;
+    border: 2px solid #0000FF;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #0000FF;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-container a {
+    color: #0000FF;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.875rem; /* Ajout pour réduire la taille du texte du lien */
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+    color: #4d4dff;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0000FF;
+    color: #FFFFFF;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #4d4dff;
+    transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+    background-color: rgba(0, 0, 255, 0.5);
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.5);
+    transform: none;
+}

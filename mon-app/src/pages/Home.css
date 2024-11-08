@@ -1,0 +1,10 @@
+body {
+    background-color: black; /* Applique un fond noir à toute la page */
+    color: white; /* Assure que le texte est lisible sur un fond noir */
+}
+
+/* Si vous souhaitez appliquer le fond noir à un élément spécifique, par exemple une div avec une classe 'container' */
+.container {
+    background-color: black; /* Applique un fond noir à cet élément */
+    color: white; /* Assure que le texte est lisible */
+}

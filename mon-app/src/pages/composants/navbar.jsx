@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { FaUserPlus, FaSignInAlt } from 'react-icons/fa';
 import './navbar.css';
 
 export default function Navbar() {
@@ -9,19 +10,19 @@ export default function Navbar() {
   const translations = {
     FR: {
       signup: "S'inscrire",
-      login: "Se connecter",
+      login: "Se connecter", 
       logo: "Logo Mem"
     },
     EN: {
       signup: "Sign Up",
       login: "Login",
-      logo: "Mem Logo"
+      logo: "Mem"
     }
   };
 
   return (
     <nav className="navbar">
-      <Link to="/home" className="navbar-logo">
+      <Link to="/home" className="navbar-logo" style={{fontFamily: 'Orbitron, sans-serif', fontStyle: 'italic'}}>
         {translations['EN'].logo}
       </Link>
       
@@ -30,6 +31,7 @@ export default function Navbar() {
           onClick={() => navigate('/signup1')}
           className="button-signup"
         >
+          <FaUserPlus className="button-icon" />
           {translations['EN'].signup}
         </button>
         
@@ -37,6 +39,7 @@ export default function Navbar() {
           onClick={() => navigate('/login')}
           className="button-login"
         >
+          <FaSignInAlt className="button-icon" />
           {translations['EN'].login}
         </button>
       </div>
