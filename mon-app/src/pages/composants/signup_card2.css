@@ -189,21 +189,24 @@ select option:focus {
 }
 
 .submit-btn {
-    width: 100%;
+    padding: 0.85rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
     background-color: #0000FF;
     color: #FFFFFF;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    min-width: 140px;
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    text-align: center;
 }
 
 .submit-btn:hover {
-    background-color: #4d4dff;
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 .submit-btn:disabled {

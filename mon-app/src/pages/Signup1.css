@@ -7,4 +7,21 @@
     background-color: #000000;
     padding: 20px;
     overflow: hidden; /* Empêche le défilement */
-  }
+    margin-top: 50px; /* Augmente la distance entre la deuxième carte signup1 et la navbar */
+    padding-top: 50px; /* Ajoute un espace supplémentaire entre la deuxième carte signup1 et la navbar */
+}
+
+button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.submit-btn {
+    max-width: 200px;
+    margin: 0 auto;
+}
