@@ -5,4 +5,20 @@
     min-height: 100vh;
     background-color: #000000; /* Fond noir */
     padding: 20px;
+    margin-top: 50px; /* Augmente la distance entre la deuxième carte signup2 et la navbar */
+}
+
+button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.submit-btn {
+    max-width: 200px;
+    margin: 0 auto;
 }

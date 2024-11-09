@@ -5,4 +5,14 @@
     min-height: 100vh;
     background-color: #000000;
     padding: 20px;
-  }
+}
+
+button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
